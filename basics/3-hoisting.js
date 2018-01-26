@@ -1,7 +1,12 @@
-say('Bob');
+// window.myVar = 5;
+// var myVar = 5;
+// myVar = 5;
 
-var phrase = 'Hi';
+a();
+console.log()
 
-function say(name) {
-  console.log( name + ", " + phrase );
+function a() {
+  var x = 1;
+  window.y = 2;
+  z = 3; //antipattern, window.z
 }

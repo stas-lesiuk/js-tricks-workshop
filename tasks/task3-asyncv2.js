@@ -1,14 +1,14 @@
 getCustomers(function (customers) {
-  //some processing
-  if (5 > 2) { //dummy statement just to increase indentation
-    for (var i = 0; i < customers.length; i++) {
-      getCustomerDetails(customers[i], function (customerDetails) {
-        if(customerDetails.deliveryAddress) { //another bunch of 'smart' logic
-          sendOrder(customerDetails.deliveryAddress);
-        }
-      });
+    //some processing
+    if (5 > 2) { //dummy statement just to increase indentation
+      for (var i = 0; i < customers.length; i++) {
+        getCustomerDetails(customers[i], function (customerDetails) {
+          if(customerDetails.deliveryAddress) { //another bunch of 'smart' logic
+            sendOrder(customerDetails.deliveryAddress);
+          }
+        });
+      }
     }
-  }
 });
 
 function getCustomers(callback) {

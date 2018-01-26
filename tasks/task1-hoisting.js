@@ -1,7 +1,9 @@
 x = 5;
 a();
 function a() {
-  x = x * x;
+  var x;
+  x = global.x * global.x;
+  console.log('inside: ', x);
 }
 /*
 The console.log should display 5, not 25.

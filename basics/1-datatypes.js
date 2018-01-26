@@ -8,6 +8,7 @@ var s3 = '5';
 
 var b1 = true;
 var b2 = Boolean(5 < 2); //false
+var b3 = (5 < 2); //false
 
 var obj = {
   property: 'someValue',
