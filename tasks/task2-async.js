@@ -1,4 +1,5 @@
 var users = fakeUsersGet();
+receiver(users);
 
 function receiver(users) {
   console.log('received users: ', users);
